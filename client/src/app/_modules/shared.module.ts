@@ -13,7 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
     })
   ],
   exports: [
-    BsDropdownModule, 
+    BsDropdownModule,
     ToastrModule
   ]
 })
