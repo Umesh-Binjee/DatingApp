@@ -12,7 +12,7 @@ using AutoMapper;
 
 namespace API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class UsersController : BaseApiController
     {
         private readonly IUserRepository _userRepository;
@@ -31,7 +31,7 @@ namespace API.Controllers
         }
 
         [HttpGet("{username}")]
-        public async Task<ActionResult<MemberDto>> GetUsers(string username)
+        public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             return await _userRepository.GetMemberAsync(username);
         }
