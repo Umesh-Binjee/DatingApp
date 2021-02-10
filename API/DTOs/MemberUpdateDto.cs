@@ -2,6 +2,8 @@ namespace API.DTOs
 {
     public class MemberUpdateDto
     {
+        public string UserName { get; set; }
+
         public string Introduction { get; set; }
 
         public string LookingFor { get; set; }
